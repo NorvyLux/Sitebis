@@ -501,10 +501,10 @@ function downloadPDF(){
   }
   doc.setFillColor(245,245,247);doc.roundedRect(ML,y+4,RW,26,3,3,'F');
   doc.setFont('helvetica','bold');doc.setFontSize(12);doc.setTextColor(ink[0],ink[1],ink[2]);doc.text("Norvy corrige chaque lacune.",ML+8,y+15);
-  doc.setFont('helvetica','normal');doc.setFontSize(10);doc.setTextColor(gray[0],gray[1],gray[2]);doc.text("Facturation, dossiers, AML/KYC et questionnaire OAL dans un seul logiciel. Réservez une démo sur norvy.fr.",ML+8,y+22,{maxWidth:RW-16});
+  doc.setFont('helvetica','normal');doc.setFontSize(10);doc.setTextColor(gray[0],gray[1],gray[2]);doc.text("Facturation, dossiers, AML/KYC et questionnaire OAL dans un seul logiciel. Réservez une démo sur norvy.lu.",ML+8,y+22,{maxWidth:RW-16});
   doc.setDrawColor(line[0],line[1],line[2]);doc.line(ML,282,W-ML,282);
   doc.setFont('helvetica','normal');doc.setFontSize(8);doc.setTextColor(faint[0],faint[1],faint[2]);
-  doc.text('Norvy — Rapport confidentiel · '+today,ML,288);doc.text('norvy.fr',W-ML,288,{align:'right'});
+  doc.text('Norvy — Rapport confidentiel · '+today,ML,288);doc.text('norvy.lu',W-ML,288,{align:'right'});
   doc.save('Norvy-auto-evaluation-AML.pdf');
 }
 render();
